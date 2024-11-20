@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+    <div class="container">
+        <div class="row">
+            <div class="col text-center">
+                <h1 class="my-4">Welcome to the Bookstore</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 mb-3 text-center">
+                <a href="{{ url_for('register') }}" class="btn btn-primary btn-lg btn-block">Register</a>
+            </div>
+            <div class="col-lg-6 col-md-6 mb-3 text-center">
+                <a href="{{ url_for('login') }}" class="btn btn-secondary btn-lg btn-block">Login</a>
+            </div>
+            <div class="col-lg-6 col-md-6 mb-3 text-center">
+                <a href="{{ url_for('shop_register') }}" class="btn btn-primary btn-lg btn-block">Register as Shop</a>
+            </div>
+            <div class="col-lg-6 col-md-6 mb-3 text-center">
+                <a href="{{ url_for('shop_login') }}" class="btn btn-secondary btn-lg btn-block">Login as Shop</a>
+            </div>
+        </div>
+    </div>
+{% endblock %}
